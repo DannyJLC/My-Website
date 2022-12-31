@@ -203,15 +203,13 @@
 }
 
 .main__container {
-    display: grid;
-    grid-template-columns: 1fr 1fr ;
     align-items: center;
     justify-self: center;
     margin: 0 auto;
     height: 100vh;
-    background-color: #141414;
+    background-color: #1b1b1b;
     z-index: 1; 
-    width: 100%;
+    width: 50%;
     max-width: 1300px;
     padding: 0 50px;
 }
@@ -225,7 +223,6 @@
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
-
 }
 
 .main__content h2 {
@@ -288,12 +285,12 @@
 }
 
 .main__img--container {
-    text-align: center;
+    text-align: right;
 }
 
 #main__img {
-    height: 80%;
-    width: 80%;
+    height: 60%;
+    width: 60%;
 }
 
 /* Mobile Responsive Swag */
@@ -350,119 +347,6 @@
     }
 }
 
-/* Banger Images CSS */
-
-.pictures {
-    background: #141414;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100vh;
-    padding-top: 3rem;
-}
-
-.pictures h1 {
-    background-color: #894fe6;
-    background-image:linear-gradient(to right, #6f2fd4 0%, #6430b8 0%, #6a45a7 21%, #5b2aaa 52%, #441b86 78%, #7941d3 100%);
-    background-size: 100%;
-    margin-bottom: 0.5rem;
-    font-size: 3rem;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-}
-
-.pictures__container {
-    display:flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.pictures__card {
-    margin: 4rem;
-    height: 625px;
-    width: 500px;
-    border-radius: 2rem;
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17, 0.6) 100%), url('/images/ethan1.jpg');
-    background-size: cover;
-    position:relative;
-    color: #fff;
-}
-
-.pictures__card:nth-child(2) {
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17, 0.6) 100%), url('/images/ethan2.jpg');
-}
-
-.pictures__card:nth-child(3) {
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17, 0.6) 100%), url('/images/ethan3.jpg');
-}
-
-.pictures h2 {
-    position:absolute;
-    top: 350px;
-    left:30px;
-}
-
-.pictures__card p {
-    position: absolute;
-    top: 400px;
-    left:30px;
-}
-
-.pictures__card button {
-    color:#fff;
-    padding: 10px 20px;
-    border: none;
-    outline: none;
-    border-radius: 4px;
-    background: #3c2383;
-    position: absolute;
-    top: 440px;
-    left: 30px;
-    font-size: 1rem;
-    cursor: pointer;
-}
-
-.pictures__card button:hover {
-    color:#fff;
-    background: #4a2b9e;
-}
-
-.pictures__card:hover {
-    transform: scale(1.075);
-    transition: 0.25s ease-in;
-    cursor:pointer
-}
-
-@media screen and (max-width: 960px) {
-    .pictures {
-        height: 2400px;
-    }
-
-    .pictures h1 {
-        font-size: 2rem;
-        margin-top: 2rem;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .pictures {
-        height: 1400px;
-    }
-
-    .pictures h1 {
-        font-size: 1.2rem;
-    }
-
-    .pictures__card {
-        width: 300px;
-    }
-}
-
-
-
-
 /* Swag gif */
 .section__container {
     height: 100vh;
@@ -486,7 +370,7 @@
 
 .footer__container {
     background-color: #141414;
-    padding: none;
+    padding: 0.5rem 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
